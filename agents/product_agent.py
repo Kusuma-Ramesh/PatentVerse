@@ -1,3 +1,10 @@
 class ProductAgent:
     def search_products(self, idea):
-        return f"Searching similar products for: {idea}"
+
+        products = [
+            "Lumos Smart Helmet",
+            "Livall Helmet",
+            "Sena Smart Helmet"
+        ]
+
+        return products
