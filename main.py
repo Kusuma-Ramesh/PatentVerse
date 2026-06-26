@@ -5,6 +5,7 @@ from agents.risk_agent import RiskAgent
 
 
 def main():
+
     idea = input("Enter your product idea: ")
 
     patent_agent = PatentAgent()
@@ -12,12 +13,28 @@ def main():
     innovation_agent = InnovationAgent()
     risk_agent = RiskAgent()
 
-    print("\n--- PatentVerse Analysis ---\n")
+    patents = patent_agent.search_patents(idea)
+    products = product_agent.search_products(idea)
+    innovations = innovation_agent.suggest_innovations(idea)
+    risks = risk_agent.analyze_risk(idea)
 
-    print(patent_agent.search_patents(idea))
-    print(product_agent.search_products(idea))
-    print(innovation_agent.suggest_innovations(idea))
-    print(risk_agent.analyze_risk(idea))
+    print("\n========== PatentVerse Report ==========\n")
+
+    print("📜 Related Patents:")
+    for patent in patents:
+        print("-", patent)
+
+    print("\n🛒 Similar Products:")
+    for product in products:
+        print("-", product)
+
+    print("\n💡 Innovation Suggestions:")
+    for innovation in innovations:
+        print("-", innovation)
+
+    print("\n⚠️ Risk Analysis:")
+    for key, value in risks.items():
+        print(f"{key}: {value}")
 
 
 if __name__ == "__main__":
