@@ -1,43 +1,187 @@
-# PatentVerse
+# PatentVerse – AI Patent Intelligence Platform
 
-PatentVerse is a Multi-Agent Innovation and Patent Intelligence System that helps innovators, startups, researchers, and businesses evaluate product ideas before development.
+PatentVerse is an AI-powered multi-agent patent intelligence platform that analyzes invention ideas and generates innovation insights, patent risks, and market evaluations.
 
-## Track
-Agents for Business
+The system combines multiple AI agents to simulate an intelligent patent analysis workflow, helping inventors and researchers evaluate ideas before implementation.
 
-## Problem Statement
+---
 
-Many innovators spend months building products without realizing that similar patents, products, or technologies already exist. PatentVerse helps users identify existing patents, analyze market competition, discover innovation opportunities, and assess risks before investing time and money.
+## Overview
+
+PatentVerse provides:
+
+* Patent analysis
+* Innovation suggestion generation
+* Risk assessment
+* Market evaluation
+* Technical feasibility analysis
+* Interactive AI dashboard
+
+---
+
+## Features
+
+* Multi-agent architecture
+* AI-powered invention analysis
+* Innovation suggestion generation
+* Patent risk assessment
+* Market risk evaluation
+* Technical risk analysis
+* Real-time AI insights
+* Streamlit-based dashboard
+* Modern user interface
+
+---
+
+## AI Agents
+
+### Patent Agent
+
+Analyzes invention ideas and identifies similar technologies and patent concepts.
+
+### Innovation Agent
+
+Generates innovative improvements and suggestions using Google Gemini.
+
+### Risk Agent
+
+Evaluates:
+
+* Patent Risk
+* Market Risk
+* Technical Risk
+
+---
+
+## System Architecture
+
+Input Idea
+
+↓
+
+Patent Agent
+
+↓
+
+Innovation Agent
+
+↓
+
+Risk Agent
+
+↓
+
+PatentVerse Dashboard
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Streamlit
+* HTML
+* CSS
+
+### Backend
+
+* Python
+
+### AI
+
+* Google Gemini API
+
+### Libraries
+
+* streamlit
+* google-generativeai
+* python-dotenv
+
+---
+
+## Project Structure
+
+```text
+PatentVerse/
+├── agents/
+├── services/
+├── app/
+├── .streamlit/
+├── data/
+├── diagrams/
+├── docs/
+├── screenshots/
+├── requirements.txt
+└── README.md
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/USERNAME/PatentVerse.git
+cd PatentVerse
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+Run the application:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+---
+
+## Output
+
+PatentVerse provides:
+
+* Innovation suggestions
+* Patent analysis
+* Market evaluation
+* Technical feasibility analysis
+* AI-generated recommendations
+
+---
+
+## Applications
+
+* Patent research
+* Product innovation
+* Startup idea validation
+* Research projects
+* Final year projects
+* Technology assessment
+
+---
 
 ## Team Members
 
-- Kusuma Ramesh
-- Raksha
-- Meghana
-- Monikha
+| Name      | Contribution                             |
+| --------- | ---------------------------------------- |
+| Kusuma R  | AI Integration and Dashboard Development |
+| Meghana R | Patent Analysis Module                   |
+| Monikha M | Risk Analysis Module                     |
+| Raksha R  | Documentation and Testing                |
 
-## Multi-Agent System
+Department of Computer Science and Engineering
 
-### Patent Search Agent
-Searches for existing patents related to the idea.
+Final Year Project Team
 
-### Similar Product Agent
-Finds existing products and competitors.
+---
 
-### Innovation Agent
-Identifies unique opportunities and suggests improvements.
+## License
 
-### Risk Analysis Agent
-Evaluates patent overlap, competition, and development risks.
-
-## Technologies
-
-- Python
-- Streamlit
-- Google Gemini API
-- Pandas
-- Requests
-
-## Project Goal
-
-To help innovators build truly unique products by providing AI-powered patent intelligence and innovation analysis.
+This project is released under the MIT License.
