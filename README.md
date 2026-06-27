@@ -93,6 +93,31 @@ PatentVerse Dashboard
 ![AI Report](screenshots/report_page.png)
 
 ---
+## System Diagrams
+
+### System Architecture
+
+This diagram illustrates the overall architecture of PatentVerse, showing the interaction between the Streamlit frontend, AI agents, Gemini API, and analysis modules.
+
+![System Architecture](diagrams/system_architecture.png)
+
+---
+
+### Multi-Agent Pipeline
+
+This workflow demonstrates how invention ideas flow through the different AI agents including Patent Agent, Innovation Agent, Risk Agent, and Verdict Generation.
+
+![Multi-Agent Pipeline](diagrams/multi_agent_pipeline.png)
+
+---
+
+### Data Flow Diagram
+
+This diagram explains the flow of data from user input through the AI agents and the generation of analysis results.
+
+![Data Flow Diagram](diagrams/dataflow_diagram.png)
+
+---
 
 ## Technology Stack
 
