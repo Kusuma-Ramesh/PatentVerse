@@ -185,6 +185,45 @@ Run the application:
 ```bash
 streamlit run app/streamlit_app.py
 ```
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kusuma-Ramesh/PatentVerse.git
+cd PatentVerse
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+---
+## Google Gemini API Setup
+
+1. Visit Google AI Studio:
+   https://aistudio.google.com/
+
+2. Create a free API key.
+
+3. Create a `.env` file in the project root directory.
+
+Example:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+4. Save the file.
+
+The application will automatically load the API key using `python-dotenv`.
 
 ---
 
@@ -197,6 +236,25 @@ PatentVerse provides:
 * Market evaluation
 * Technical feasibility analysis
 * AI-generated recommendations
+
+---
+## Important Notes
+
+> [!IMPORTANT]
+> This project requires a valid Google Gemini API key to perform patent analysis, innovation generation, and risk assessment.
+
+> [!WARNING]
+> The `.env` file containing API credentials is intentionally excluded from this repository for security reasons.
+
+> [!TIP]
+> Create a `.env` file in the root directory and add:
+>
+> ```env
+> GEMINI_API_KEY=your_api_key_here
+> ```
+
+> [!NOTE]
+> The application requires an active internet connection and valid API access to function correctly.
 
 ---
 
