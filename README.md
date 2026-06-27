@@ -75,6 +75,25 @@ PatentVerse Dashboard
 
 ---
 
+## Application Screenshots
+
+### Home Page
+![Home Page](screenshots/home_page.png)
+
+### Analysis Dashboard
+![Analysis Dashboard](screenshots/analysis_page.png)
+
+### Innovation Suggestions
+![Innovation Suggestions](screenshots/innovation_page.png)
+
+### Risk Analysis
+![Risk Analysis](screenshots/risk_page.png)
+
+### AI Report
+![AI Report](screenshots/report_page.png)
+
+---
+
 ## Technology Stack
 
 ### Frontend
