@@ -1,41 +1,26 @@
 from agents.patent_agent import PatentAgent
-from agents.product_agent import ProductAgent
-from agents.innovation_agent import InnovationAgent
 from agents.risk_agent import RiskAgent
+from services.gemini_service import generate_innovation
 
 
-def main():
+idea = input("Enter your invention idea: ")
 
-    idea = input("Enter your product idea: ")
+print("\nSearching similar patents...\n")
+patent_agent = PatentAgent()
+patents = patent_agent.search_patents(idea)
 
-    patent_agent = PatentAgent()
-    product_agent = ProductAgent()
-    innovation_agent = InnovationAgent()
-    risk_agent = RiskAgent()
-
-    patents = patent_agent.search_patents(idea)
-    products = product_agent.search_products(idea)
-    innovations = innovation_agent.suggest_innovations(idea)
-    risks = risk_agent.analyze_risk(idea)
-
-    print("\n========== PatentVerse Report ==========\n")
-
-    print("📜 Related Patents:")
-    for patent in patents:
-        print("-", patent)
-
-    print("\n🛒 Similar Products:")
-    for product in products:
-        print("-", product)
-
-    print("\n💡 Innovation Suggestions:")
-    for innovation in innovations:
-        print("-", innovation)
-
-    print("\n⚠️ Risk Analysis:")
-    for key, value in risks.items():
-        print(f"{key}: {value}")
+for patent in patents:
+    print("-", patent)
 
 
-if __name__ == "__main__":
-    main()
+print("\nInnovation Suggestions:\n")
+innovations = generate_innovation(idea)
+print(innovations)
+
+
+print("\nRisk Analysis:\n")
+risk_agent = RiskAgent()
+risks = risk_agent.analyze_risk(idea)
+
+for risk, level in risks.items():
+    print(f"{risk}: {level}")

@@ -1,10 +1,19 @@
+from googlesearch import search
+
+
 class PatentAgent:
+
     def search_patents(self, idea):
 
-        patents = [
-            f"Smart Helmet Safety Patent related to {idea}",
-            f"AI Monitoring Patent related to {idea}",
-            f"Sensor-based Innovation Patent related to {idea}"
-        ]
+        query = f"{idea} patent"
 
-        return patents
+        results = []
+
+        try:
+            for url in search(query, num_results=5):
+                results.append(url)
+
+        except:
+            results.append("No patent information found.")
+
+        return results
